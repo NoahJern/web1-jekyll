@@ -1,0 +1,20 @@
+{% include head.html %}
+
+
+<ul>
+    {% for post in site.posts %}
+    <img src="{{post.img}}" width="66.6%" class="blog">
+    <div class="info">
+        <h1>{{post.title}}</h1>
+        <h4>{{post.date}}</h4>
+        <h3>{{post.content}}</h3>
+        <a href="#">READ MORE</a>
+    </div>
+    {% endfor %}
+</ul>
+
+
+
+{% include footer.html %}
+</body>
+</html>
